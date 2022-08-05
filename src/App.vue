@@ -10,58 +10,57 @@
 -->
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
     <!-- <router-view /> -->
-		<!-- <div class="star" style="width: 200px; height: 300px; background-color: red;"> -->
+    <!-- <div class="star" style="width: 200px; height: 300px; background-color: red;"> -->
 
-		<!-- </div> -->
+    <!-- </div> -->
   </div>
 </template>
 <script>
-	export default {
-		name: 'App',
-		created() {
-			window.L2Dwidget
-				//此处是对点击人物时触发事件的监听
-				.on('*', (name) => {
-
-				})
-				//对人物的属性配置
-				.init({
-					pluginRootPath: '../live2dw/', //人物文件夹的位置
-					pluginJsPath: 'lib/',
-					pluginModelPath: 'live2d-widget-model-koharu/assets/',
-					model: {
-						jsonPath: '../live2dw/live2d-widget-model-koharu/assets/koharu.model.json'
-					},
-					dialog: {
-						enable: true, //是否开启对话框
-						script: {
-							//每20s，显示一言（调用一言Api返回的句子）
-							'every idle 20s': '$hitokoto$',
-							//触摸到class='star'对象,将会展示的文字
-							'hover .star': '星星在天上而你在我心里 (*/ω＼*)',
-							//触摸到身体
-							'tap body': '害羞⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄',
-							//触摸到头部
-							'tap face': '~~'
-						}
-					},
-					display: { //人物的属性配置
-						position: 'left',
-						width: 250,
-						height: 700,
-						hOffset: 100, // 横向偏移
-						vOffset: -220 // 纵向偏移
-					}, 
-					mobile: {
-						show: true, //是否在移动端展示
-						scale: 0.5 //t透明度
-					}
-				});
-		}
-
-	}
+export default {
+  name: "App",
+  created() {
+    window.L2Dwidget
+      //此处是对点击人物时触发事件的监听
+      .on("*", (name) => {})
+      //对人物的属性配置
+      .init({
+        pluginRootPath: "../live2dw/", //人物文件夹的位置
+        pluginJsPath: "lib/",
+        pluginModelPath: "live2d-widget-model-koharu/assets/",
+        model: {
+          jsonPath:
+            "../live2dw/live2d-widget-model-koharu/assets/koharu.model.json",
+        },
+        dialog: {
+          enable: true, //是否开启对话框
+          script: {
+            //每20s，显示一言（调用一言Api返回的句子）
+            "every idle 20s": "$hitokoto$",
+            //触摸到class='star'对象,将会展示的文字
+            "hover .star": "星星在天上而你在我心里 (*/ω＼*)",
+            //触摸到身体
+            "tap body": "害羞⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄",
+            //触摸到头部
+            "tap face": "~~",
+          },
+        },
+        display: {
+          //人物的属性配置
+          position: "left",
+          width: 250,
+          height: 700,
+          hOffset: 100, // 横向偏移
+          vOffset: -220, // 纵向偏移
+        },
+        mobile: {
+          show: true, //是否在移动端展示
+          scale: 0.5, //t透明度
+        },
+      });
+  },
+};
 </script>
 
 <style lang="scss">
@@ -70,13 +69,13 @@
   padding: 0;
 }
 body {
-	margin: 0;
-	width: 100%;
-	}
+  margin: 0;
+  width: 100%;
+}
 
 html {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -1,4 +1,4 @@
-<template>
+<template class="mouseHover">
   <div class="home">
     <header>
       <div class="addressName">chaichai.top</div>
@@ -9,68 +9,111 @@
       </div>
     </header>
     <nav class="welecomeText">welecome to chaichai.top</nav>
-    <button class="homeBtn"> 
-      <img src="../assets/homeBtn.webp" class="btnPic">
-    </button>
+    <div class="homeBtn">
+      <img src="../assets/homeBtn.webp" class="btnPic" />
+      <div class="shadowBox">
+        <div>
+          <span class="shadowText">柴柴万岁</span>
+        </div>
+      </div>
+    </div>
     <div class="copyright">
-      <span style="color:#fff;font-size: 19px;">© 2022 Chai chai</span>
-      <span><a href="https://beian.miit.gov.cn/#/Integrated/index"
-          style="color:#fff;font-size: 19px;">滇ICP备2022000365号</a></span>
+      <span style="color: #fff; font-size: 19px">© 2022 Chai chai</span>
+      <span
+        ><a
+          href="https://beian.miit.gov.cn/#/Integrated/index"
+          style="color: #fff; font-size: 19px"
+          >滇ICP备2022000365号</a
+        ></span
+      >
     </div>
   </div>
 </template>
 
 <script  type="text/javascript">
-! function (e, t, a) {
+!(function (e, t, a) {
   function r() {
-    for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[
-      e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x +
-      "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e]
-        .scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
-    requestAnimationFrame(r)
+    for (var e = 0; e < s.length; e++)
+      s[e].alpha <= 0
+        ? (t.body.removeChild(s[e].el), s.splice(e, 1))
+        : (s[e].y--,
+          (s[e].scale += 0.004),
+          (s[e].alpha -= 0.013),
+          (s[e].el.style.cssText =
+            "left:" +
+            s[e].x +
+            "px;top:" +
+            s[e].y +
+            "px;opacity:" +
+            s[e].alpha +
+            ";transform:scale(" +
+            s[e].scale +
+            "," +
+            s[e].scale +
+            ") rotate(45deg);background:" +
+            s[e].color +
+            ";z-index:99999"));
+    requestAnimationFrame(r);
   }
   function n() {
     var t = "function" == typeof e.onclick && e.onclick;
     e.onclick = function (e) {
-      t && t(), o(e)
-    }
+      t && t(), o(e);
+    };
   }
   function o(e) {
     var a = t.createElement("div");
-    a.className = "heart", s.push({
-      el: a,
-      x: e.clientX - 5,
-      y: e.clientY - 5,
-      scale: 1,
-      alpha: 1,
-      color: c()
-    }), t.body.appendChild(a)
+    (a.className = "heart"),
+      s.push({
+        el: a,
+        x: e.clientX - 5,
+        y: e.clientY - 5,
+        scale: 1,
+        alpha: 1,
+        color: c(),
+      }),
+      t.body.appendChild(a);
   }
   function i(e) {
     var a = t.createElement("style");
     a.type = "text/css";
     try {
-      a.appendChild(t.createTextNode(e))
+      a.appendChild(t.createTextNode(e));
     } catch (t) {
-      a.styleSheet.cssText = e
+      a.styleSheet.cssText = e;
     }
-    t.getElementsByTagName("head")[0].appendChild(a)
+    t.getElementsByTagName("head")[0].appendChild(a);
   }
   function c() {
-    return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math
-      .random()) + ")"
+    return (
+      "rgb(" +
+      ~~(255 * Math.random()) +
+      "," +
+      ~~(255 * Math.random()) +
+      "," +
+      ~~(255 * Math.random()) +
+      ")"
+    );
   }
   var s = [];
-  e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e
-    .mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
-      setTimeout(e, 1e3 / 60)
-    }, i(
+  (e.requestAnimationFrame =
+    e.requestAnimationFrame ||
+    e.webkitRequestAnimationFrame ||
+    e.mozRequestAnimationFrame ||
+    e.oRequestAnimationFrame ||
+    e.msRequestAnimationFrame ||
+    function (e) {
+      setTimeout(e, 1e3 / 60);
+    }),
+    i(
       ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
-    ), n(), r()
-}(window, document)
+    ),
+    n(),
+    r();
+})(window, document);
 export default {
-  name: 'HomeView',
-}
+  name: "HomeView",
+};
 </script>
 
 <style lang="scss">
@@ -79,13 +122,16 @@ export default {
   padding: 0;
   user-select: none;
 }
+html {
+  cursor: url("../assets/22.cur"), default;
+}
 a {
   text-decoration: none;
 }
 .home {
   position: relative;
-  background: url('@/assets/bgc.jpeg') no-repeat;
-  background-size: 100%;
+  background: url("@/assets/bgc.jpeg") no-repeat;
+  background-size: 100% 122vh;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -122,40 +168,60 @@ a {
     color: #fff;
     font-size: 50px;
   }
-  .homeBtn{
-    z-index: 999;
+  .homeBtn {
+    z-index: 9;
     border: 0;
     position: absolute;
     cursor: pointer;
-    right: 7px;
+    right: 5px;
     bottom: 5px;
     width: 100px;
     height: 100px;
-    transition:width 2s;
+    transition: width 2s;
     border-radius: 50%;
-    background-color:#fff;
     text-align: bottom;
   }
-  .btnPic{
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      border: 1px solid #ccc;
-    }
-  .homeBtn:hover{
-      width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: #ccc;
-    }
-  .shadowBox {
+  .btnPic {
     position: absolute;
-    right: -150px;
-    bottom: -150px;
-    width: 500px;
-    height: 500px;
-    background-color: rgba( 40, 44, 52,  0.6);
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
     border-radius: 50%;
+    border: 30px solid #fff;
+  }
+  .shadowBox {
+    z-index: -1;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 100px;
+    height: 100px;
+    font-size: 1px;
+    color: rgba(40, 44, 52, 0);
+    background-color: rgba(40, 44, 52, 0.6);
+    border-radius: 50%;
+    transition: all 0.6s;
+    transition-timing-function: ease-in-out;
+  }
+  .btnPic:hover {
+    border: 30px solid #fff;
+  }
+  .btnPic:hover + .shadowBox {
+    transform: scale(10.5);
+  }
+  .shadowBox:hover {
+    transform: scale(10.5);
+    font-size: 1px;
+    color: white;
+  }
+  .shadowText {
+    display: block;
+    height: 30px;
+    font-size: 1px;
+    padding: 20px 35px 0 0;
+    // left: 0;
+    // bottom: 0;
   }
   .copyright {
     position: absolute;
