@@ -2,7 +2,7 @@
  * @Author: fengyuanyao fengyuanyao@fanyu.com 
  * @Date: 2022-08-03 15:33:01
  * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-03 17:02:46
+ * @LastEditTime: 2022-08-05 15:02:41
  * @FilePath: \blog-demo\src\App.vue
  * @Description: 
  * 
@@ -70,14 +70,14 @@
   padding: 0;
 }
 body {
-		margin: 0;
-		width: 100%;
+	margin: 0;
+	width: 100%;
 	}
 
-	html {
-		width: 100%;
-		height: 100%;
-	}
+html {
+	width: 100%;
+	height: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

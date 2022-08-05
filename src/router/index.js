@@ -1,7 +1,16 @@
+/*
+ * @Author: fengyuanyao fengyuanyao@fanyu.com 
+ * @Date: 2022-08-03 15:33:01
+ * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
+ * @LastEditTime: 2022-08-05 15:24:20
+ * @FilePath: \blog-demo\src\router\index.js
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by error: git config user.name && git config user.email & please set dead value or install git, All Rights Reserved. 
+ */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
 Vue.use(VueRouter)
 
 const routes = [
@@ -11,12 +20,12 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/article',
+    name: 'article',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/ArticleView.vue')
   }
 ]
 
