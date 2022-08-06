@@ -51,7 +51,7 @@ export default {
           position: "left",
           width: 250,
           height: 700,
-          hOffset: 100, // 横向偏移
+          hOffset: 50, // 横向偏移
           vOffset: -220, // 纵向偏移
         },
         mobile: {
