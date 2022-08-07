@@ -20,96 +20,89 @@
     </header>
     <main>
       <section>
-        <div
-          class="articleContent"
-          :style="{
-            background: 'url(' + require('../assets/mm1.jpeg') + ') ',
-            'background-size': 'cover',
-            'background-position': 'center center',
-          }"
-        >
-          <p class="contentTitle">
-            <a style="color: #fff" href="">母猪的产后护理</a>
-          </p>
-          <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
-        </div>
-        <div
-          class="articleContent"
-          :style="{
-            background: 'url(' + require('../assets/mm2.jpeg') + ') ',
-            'background-size': 'cover',
-            'background-position': 'center center',
-          }"
-        >
-          <p class="contentTitle">
-            <a style="color: #fff" href="">母猪的产后护理</a>
-          </p>
-          <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
-        </div>
-        <div
-          class="articleContent"
-          :style="{
-            background: 'url(' + require('../assets/mm3.jpeg') + ') ',
-            'background-size': 'cover',
-            'background-position': 'center center',
-          }"
-        >
-          <p class="contentTitle">
-            <a style="color: #fff" href="">母猪的产后护理</a>
-          </p>
-          <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
-        </div>
-        <div
-          class="articleContent"
-          :style="{
-            background: 'url(' + require('../assets/mm6.jpeg') + ') ',
-            'background-size': 'cover',
-            'background-position': 'center center',
-          }"
-        >
-          <p class="contentTitle">
-            <a style="color: #fff" href="">母猪的产后护理</a>
-          </p>
-          <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
-        </div>
-        <div
-          class="articleContent"
-          :style="{
-            background: 'url(' + require('../assets/mm4.jpeg') + ') ',
-            'background-size': 'cover',
-            'background-position': 'center center',
-          }"
-        >
-          <p class="contentTitle">
-            <a style="color: #fff" href="">母猪的产后护理</a>
-          </p>
-          <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
-        </div>
-        <div
-          class="articleContent"
-          :style="{
-            background: 'url(' + require('../assets/mm5.jpeg') + ') ',
-            'background-size': 'cover',
-            'background-position': 'center center',
-          }"
-        >
-          <p class="contentTitle">
-            <a style="color: #fff" href="">母猪的产后护理</a>
-          </p>
-          <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+        <div class="blurBox"></div>
+        <div class="contentBox">
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm1.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm2.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm3.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm4.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm5.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm6.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
         </div>
       </section>
     </main>
-    <footer class="copyright">
-      <span style="color: #fff; font-size: 19px">© 2022 Chai chai</span>
-      <span
-        ><a
-          href="https://beian.miit.gov.cn/#/Integrated/index"
-          style="color: #fff; font-size: 19px"
-          >滇ICP备2022000365号</a
-        ></span
-      >
-    </footer>
   </div>
 </template>
 
@@ -125,10 +118,6 @@ export default {};
 body {
   height: 100vh;
   background-color: rgba(188, 217, 235, 0.4);
-}
-html {
-  background: url("../assets/bgc2.jpg") repeat;
-  background-size: 829px;
 }
 header {
   display: flex;
@@ -158,12 +147,30 @@ header {
   }
 }
 section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 80%;
-  height: 70vh;
-  margin: 10vh auto;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+
+  .blurBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    // filter: blur(3.5px);
+    background: url("../assets/bg3.jpg") repeat;
+    background-size: 500px;
+  }
+  .contentBox {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    width: 80%;
+    height: 70vh;
+    margin: 10vh auto;
+  }
   .articleContent {
     z-index: 2;
     position: relative;
@@ -171,6 +178,7 @@ section {
     height: 300px;
     border-radius: 55px;
     box-shadow: 10px 10px 20px #8498a5;
+    transition: all 0.3s;
     .contentImg {
       width: 450px;
       height: 300px;
@@ -190,6 +198,9 @@ section {
       margin-left: 80px;
     }
   }
+  .articleContent:hover {
+    transform: scale(1.1);
+  }
   .createTime::after {
     content: "";
     position: absolute;
@@ -200,18 +211,6 @@ section {
     z-index: -1;
     border-radius: 55px;
     background-color: rgba(0, 0, 0, 0.3);
-  }
-}
-.copyright {
-  position: absolute;
-  height: 40px;
-  width: 100%;
-  bottom: 8px;
-  text-align: center;
-  font-weight: 600;
-  span a {
-    height: 20px;
-    display: block;
   }
 }
 </style>
