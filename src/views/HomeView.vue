@@ -5,10 +5,13 @@
       <div class="routerBox">
         <router-link to="/" class="routerLink">首页</router-link>
         <router-link to="/article" class="routerLink">文章</router-link>
+        <router-link to="/login" class="routerLink">后台</router-link>
         <a href="https://marrydream.top" class="routerLink">友链</a>
       </div>
     </header>
-    <nav class="welecomeText">welecome to chaichai.top</nav>
+    <div id="hello">
+        <h1>welecome to chaichai.top</h1>
+    </div>
     <div class="homeBtn">
       <img src="../assets/homeBtn.webp" class="btnPic" />
       <div class="shadowBox">
@@ -122,7 +125,22 @@ export default {
   padding: 0;
   user-select: none;
 }
+ #hello h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-clip: text;
+  text-shadow: 15px 15px 15px rgb(158, 158, 158,0.8)
+}
 html {
+  width: 100%;
+  height: 100%;
   cursor: url("../assets/22.cur"), default;
 }
 a {
@@ -220,8 +238,6 @@ a {
     height: 30px;
     font-size: 1px;
     padding: 20px 35px 0 0;
-    // left: 0;
-    // bottom: 0;
   }
   .copyright {
     position: absolute;

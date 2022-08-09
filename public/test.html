@@ -1,0 +1,210 @@
+<!--
+ * @Author: fengyuanyao fengyuanyao@fanyu.com 
+ * @Date: 2022-08-09 10:50:50
+ * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
+ * @LastEditTime: 2022-08-09 11:18:53
+ * @FilePath: \blog-demo\public\test.html
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by error: git config user.name && git config user.email & please set dead value or install git, All Rights Reserved. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Lantinghei SC", "Microsoft Yahei", 宋体, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-style: normal;
+        }
+
+        #mian {
+            display: none;
+        }
+
+        /*背景设置*/
+        body {
+            font-family: arial, sans-serif;
+            background-image: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+            background-size: 400%;
+            animation: bganimation 15s infinite;
+        }
+
+        @keyframes bganimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /*登陆导航栏*/
+        #header {
+            height: 31;
+            min-width: 100%;
+            width: 100%;
+            padding: 9px 10px 0 0;
+            position: relative;
+        }
+
+        #hd_nav {
+            float: right;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #hd_nav li {
+            border-right: 1px solid rgba(225, 225, 225, 0.2);
+            float: left;
+            height: 14px;
+            padding: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #hd_nav .skin a {
+            padding-left: 22px;
+            position: relative;
+        }
+
+        #hd_nav a {
+            color: #fff;
+            height: 14px;
+            line-height: 14px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .login {
+            padding-left: 14px;
+            position: relative;
+        }
+
+        .avatar {
+            border-radius: 18px;
+            box-shadow: 0 1px 5px rgba(87, 87, 87, 0.5);
+            height: 20px;
+            left: 10px;
+            position: absolute;
+            top: -2px;
+            width: 20px;
+        }
+
+        .a1 {
+            margin-left: 30px;
+        }
+
+        .a2 {
+            margin-left: 3px;
+        }
+
+        /*版权声明*/
+        #footer {
+            width: 100%;
+            height: 68px;
+            float: inherit;
+            line-height: 26px;
+            color: #fff;
+            text-align: center;
+            padding-top: 50%;
+        }
+
+        /*设置第一次显示的画面*/
+        #hello h1 {
+            font-size: 300px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            background: url("http://dwz.date/beNM") 50% 50%;
+            background-size: cover;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hello">
+        <h1>Hello</h1>
+    </div>
+
+
+    <div id="mian">
+        <header id="header">
+            <!--登陆导航栏-->
+            <nav id="hd_nav">
+                <ul>
+                    <li> <a href="./portal.html">门户</a> </li>
+                    <li> <a href="#">设置主页</a> </li>
+                    <li class="skin"><a href="#">收藏网站</a> </li>
+                    <li class="login"> <img
+                            src="http://i2.hdslb.com/bfs/face/a41e42c3e0007284dc0a8a71554f92611e9dbaa0.jpg@87w_88h_1c_100q.webp"
+                            class="avatar" /> <a class="a1" href="./login.html"> 登陆 </a> <a class="a2"
+                            href="./login.html"> 注册 </a> </li>
+                </ul>
+            </nav>
+        </header>
+        <!--导航栏end-->
+        <!--版权声明-->
+        <div id="footer">
+            <p>Copyright © 2020-2020 黑猫'vlog, All rights reserved.<br />
+                2020-2020，版权所有 黑猫</p>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            /*alert("功能仅实现首页，登录注册");*/
+            if (window.name == "") {
+                /*    alert("首次进入");*/
+                window.setTimeout("init();", 2000);
+                window.name = "isReload"; // 在首次进入页面时我们可以给window.name设置一个固定值 
+            } else if (window.name == "isReload") {
+                /*alert("页面刷新");*/
+                //让整体界面显示出来
+                var test = document.getElementById("mian");
+                test.setAttribute("style", "display: inline;");
+                //隐藏欢迎界面    
+                var text = document.getElementById("hello");
+                text.setAttribute("style", "display: none;");
+            }
+        }
+
+        function init() {
+            //让整体界面显示出来
+            var test = document.getElementById("mian");
+            test.setAttribute("style", "display: inline;");
+            //隐藏欢迎界面    
+            var text = document.getElementById("hello");
+            text.setAttribute("style", "display: none;");
+        }
+
+    </script>
+</body>
+
+</html>

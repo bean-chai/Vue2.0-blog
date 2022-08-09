@@ -1,13 +1,3 @@
-<!--
- * @Author: fengyuanyao fengyuanyao@fanyu.com 
- * @Date: 2022-08-03 15:33:01
- * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-05 15:22:41
- * @FilePath: \blog-demo\src\views\AboutView.vue
- * @Description: 
- * 
- * Copyright (c) 2022 by error: git config user.name && git config user.email & please set dead value or install git, All Rights Reserved. 
--->
 <template>
   <div class="article">
     <header>
@@ -15,10 +5,10 @@
       <div class="routerBox">
         <router-link to="/" class="routerLink">首页</router-link>
         <router-link to="/article" class="routerLink">文章</router-link>
+        <router-link to="/login" class="routerLink">后台</router-link>
         <a href="https://marrydream.top" class="routerLink">友链</a>
       </div>
     </header>
-    <main>
       <section>
         <div class="blurBox"></div>
         <div class="contentBox">
@@ -102,11 +92,11 @@
           </a>
         </div>
       </section>
-    </main>
   </div>
 </template>
 
 <script>
+
 export default {};
 </script>
 
@@ -156,12 +146,30 @@ section {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    right:0;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     // filter: blur(3.5px);
     background: url("../assets/bg3.jpg") repeat;
-    background-size: 500px;
+     animation: bganimation 100s infinite;
+    background-size: 500px ;
   }
+  
+        @keyframes bganimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
   .contentBox {
     display: flex;
     flex-wrap: wrap;
@@ -177,7 +185,7 @@ section {
     width: 480px;
     height: 300px;
     border-radius: 55px;
-    box-shadow: 10px 10px 20px #8498a5;
+        box-shadow: rgba(0, 0, 0, 0.39) 10px 20px 30px, rgba(0, 0, 0, 0.43) 10px 16px 16px;
     transition: all 0.3s;
     .contentImg {
       width: 450px;
@@ -210,7 +218,7 @@ section {
     right: 0;
     z-index: -1;
     border-radius: 55px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 </style>
