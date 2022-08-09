@@ -58,7 +58,6 @@ color: #ccc !important;
   letter-spacing: 2px !important;
 
 }
-
 body {
     font-family: arial, sans-serif;
     background-image: linear-gradient(125deg, #258DC9,#0093E9,#80D0C7,#65FDF0);
