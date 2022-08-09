@@ -1,101 +1,143 @@
 <template>
   <div class="login">
     <div class="loginBox">
-        <div class="loginText">
-          <div class="loginName">LOGIN</div>
-          <div class="inputBox">
-            <input type="text" placeholder="Username" class="Input">
-          </div>
-          <div class="inputBox">
-            <input type="password" placeholder="Password" class="Input">
-          </div>
-          <button class="submitBtn">登录</button>
+      <div class="loginText">
+        <router-link to="/" class="backBtn">返回</router-link>
+        <div class="loginName">LOGIN</div>
+        <div class="inputBox">
+          <input
+            type="text"
+            :placeholder="this.placeholder1"
+            class="Input"
+            @focus="handleFoucus1"
+            @blur="handleFoucusout1"
+          />
         </div>
-        <div class="loginimgBox">
-            <div class="title">柴柴blog-后台管理系统</div>
-            <div class="shadowbox"></div>
+        <div class="inputBox">
+          <input
+            type="password"
+            :placeholder="this.placeholder2"
+            class="Input"
+            @focus="handleFoucus2"
+            @blur="handleFoucusout2"
+          />
         </div>
+        <button class="submitBtn">登录</button>
+      </div>
+      <div class="loginimgBox">
+        <div class="title">chaichai.top后台管理系统</div>
+        <div class="shadowbox"></div>
+      </div>
     </div>
     <Particles class="bgBox"></Particles>
   </div>
 </template>
 <script>
-import Particles from '@/components/particles/index.vue'
+import Particles from "@/components/particles/index.vue";
 export default {
-components:{Particles}
-}
+  components: { Particles },
+  data() {
+    return {
+      placeholder1: "Username",
+      placeholder2: "Password",
+    };
+  },
+  methods: {
+    handleFoucus1() {
+      this.placeholder1 = "";
+    },
+    handleFoucus2() {
+      this.placeholder2 = "";
+    },
+    handleFoucusout1() {
+      this.placeholder1 = "Username";
+    },
+    handleFoucusout2() {
+      this.placeholder2 = "Password";
+    },
+  },
+};
 </script>
 <style lang="scss">
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-input{resize: none;}
+input {
+  resize: none;
+}
 *:focus {
-    outline:none;
+  outline: none;
 }
-input::input-placeholder{
-	color: #ccc !important;
+input::input-placeholder {
+  color: #ccc !important;
   letter-spacing: 2px !important;
 }
-::-webkit-input-placeholder { /* WebKit browsers */ 
-color: #ccc !important; 
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ccc !important;
   letter-spacing: 2px !important;
-
-} 
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
-color: #ccc !important; 
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc !important;
   letter-spacing: 2px !important;
-
-} 
-::-moz-placeholder { /* Mozilla Firefox 19  */ 
-color: #ccc !important; 
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19  */
+  color: #ccc !important;
   letter-spacing: 2px !important;
-
-} 
-:-ms-input-placeholder { /* Internet Explorer 10  */ 
-color: #ccc !important; 
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10  */
+  color: #ccc !important;
   letter-spacing: 2px !important;
-
 }
 body {
-    font-family: arial, sans-serif;
-    background-image: linear-gradient(125deg, #258DC9,#0093E9,#80D0C7,#65FDF0);
-    background-size: 400%;
-    animation: bganimation 40s infinite;
-    }
-    @keyframes bganimation {
-     0% {
-          background-position: 0% 50%;
-        }
-     50% {
-          background-position: 100% 50%;
-        }
-     100% {
-          background-position: 0% 50%;
-        }
+  font-family: arial, sans-serif;
+  background-image: linear-gradient(125deg, #258dc9, #0093e9, #80d0c7, #65fdf0);
+  background-size: 400%;
+  animation: bganimation 40s infinite;
 }
-.bgBox{
-    position: absolute;
-    display: block; 
-    top: 0;  
-    left: 0; 
-    z-index: 0;
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.loginBox{
-    position: absolute;
-    display: flex;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-    border-radius: 25px;
-    z-index: 999;
-    width: 60vw;
-    height: 60vh;
-    overflow: hidden;
-    background-color: rgba(110, 110, 110, 0.4);
-    // box-shadow:  20px 20px 45px #bebebe
-    box-shadow: rgba(0, 0, 0, 0.15) 12.4px 12.4px 13.2px;
+.bgBox {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.backBtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.loginBox {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  z-index: 999;
+  width: 60vw;
+  height: 60vh;
+  overflow: hidden;
+  background-color: rgba(110, 110, 110, 0.4);
+  // box-shadow:  20px 20px 45px #bebebe
+  box-shadow: rgba(0, 0, 0, 0.15) 12.4px 12.4px 13.2px;
 }
 .loginName {
   font-size: 40px;
@@ -105,10 +147,10 @@ body {
   color: #fff;
   background-clip: text;
 }
-.inputBox{
+.inputBox {
   margin: 50px auto;
 }
-.Input{
+.Input {
   display: inline-block;
   width: 20vw;
   height: 5vh;
@@ -118,59 +160,60 @@ body {
   margin: 20px auto;
   background-color: transparent;
   color: #fff;
-  transition:  1s ease-out;
+  transition: 1s ease-out;
   position: relative;
   border-bottom: 3px solid #fff;
 }
-.submitBtn{
+.submitBtn {
   width: 10vw;
   height: 5vh;
   border-radius: 25px;
   font-size: 20px;
   color: #fff;
   border: 3px solid #fff;
-  background: #258DC9;
+  background: #258dc9;
   cursor: pointer;
 }
 .loginText {
-    flex: 1;
-    width: 30vw;
-    padding: 60px;
+  position: relative;
+  flex: 1;
+  width: 30vw;
+  padding: 60px;
 }
-.shadowbox{
-     width: 30vw;
-    height: 60vh;
-    background-color: rgba(110, 110, 110, 0.4);
+.shadowbox {
+  width: 30vw;
+  height: 60vh;
+  background-color: rgba(110, 110, 110, 0.4);
 }
-.loginimgBox{
-    flex: 1;
-    width: 30vw;
-    height: 60vh;
-    overflow: hidden;
-    background: url('@/assets/mm4.jpeg') no-repeat center center;
-    background-size: 150% 100%;
-    flex: 0 0 auto
+.loginimgBox {
+  flex: 1;
+  width: 30vw;
+  height: 60vh;
+  overflow: hidden;
+  background: url("@/assets/mm4.jpeg") no-repeat center center;
+  background-size: 150% 100%;
+  flex: 0 0 auto;
 }
-.title{
-    background-color: rgba(110, 110, 110, 0.3);
-    text-shadow:0 0 3px skyblue;
-    letter-spacing: 5px;
-    font-size: 40px;
-    color: #fff;
-    font-weight: 600;
-    height: 60vh;
-    line-height: 60vh;
-    animation: titlemation 2s linear 1;
+.title {
+  background-color: rgba(110, 110, 110, 0.3);
+  text-shadow: 0 0 3px skyblue;
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  height: 60vh;
+  line-height: 60vh;
+  animation: titlemation 2s linear 1;
 }
 @keyframes titlemation {
-    0% {
-        font-size: 20px;
-    }
-    50% {
-        font-size: 30px;
-    }
-    100% {
-        font-size: 40px;
-    }
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 40px;
+  }
 }
 </style>
