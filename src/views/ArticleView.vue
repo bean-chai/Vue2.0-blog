@@ -9,7 +9,9 @@
         <a href="https://marrydream.top" class="routerLink">友链</a>
       </div>
     </header>
-      <section>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><section>
         <div class="blurBox"></div>
         <div class="contentBox">
           <a
@@ -22,7 +24,7 @@
               color: '#fff',
             }"
           >
-            <p class="contentTitle">母猪的产后护理</p>
+            <p class="contentTitle">母猪的产后护理1</p>
             <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
           </a>
           <a
@@ -35,7 +37,7 @@
               color: '#fff',
             }"
           >
-            <p class="contentTitle">母猪的产后护理</p>
+            <p class="contentTitle">母猪的产后护理1</p>
             <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
           </a>
           <a
@@ -48,7 +50,7 @@
               color: '#fff',
             }"
           >
-            <p class="contentTitle">母猪的产后护理</p>
+            <p class="contentTitle">母猪的产后护理1</p>
             <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
           </a>
           <a
@@ -61,7 +63,7 @@
               color: '#fff',
             }"
           >
-            <p class="contentTitle">母猪的产后护理</p>
+            <p class="contentTitle">母猪的产后护理1</p>
             <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
           </a>
           <a
@@ -74,7 +76,7 @@
               color: '#fff',
             }"
           >
-            <p class="contentTitle">母猪的产后护理</p>
+            <p class="contentTitle">母猪的产后护理1</p>
             <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
           </a>
           <a
@@ -87,28 +89,241 @@
               color: '#fff',
             }"
           >
-            <p class="contentTitle">母猪的产后护理</p>
+            <p class="contentTitle">母猪的产后护理1</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+        </div>
+      </section></div>
+        <div class="swiper-slide"><section>
+        <div class="blurBox"></div>
+        <div class="contentBox">
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm1.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理2</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm2.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理2</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm3.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理2</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm4.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理2</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm5.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理2</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm6.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理2</p>
             <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
           </a>
         </div>
       </section>
+      </div>
+        <div class="swiper-slide">
+          <section>
+        <div class="blurBox">
+
+        </div>
+        <div class="contentBox">
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm1.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理3</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm2.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理3</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm3.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理3</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm4.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理3</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm5.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理3</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+          <a
+            href="www.baidu.com"
+            class="articleContent"
+            :style="{
+              background: 'url(' + require('../assets/mm6.jpeg') + ') ',
+              'background-size': 'cover',
+              'background-position': 'center center',
+              color: '#fff',
+            }"
+          >
+            <p class="contentTitle">母猪的产后护理3</p>
+            <p style="color: #fff" class="createTime">发布时间：2022-8-6</p>
+          </a>
+        </div>
+      </section>
+    </div>
+    </div>
+</div>
+      
   </div>
 </template>
 
 <script>
-
-export default {};
+import "swiper/css/swiper.min.css"
+import Swiper from "swiper"
+ 
+export default {
+components: {},
+props: {},
+data() {
+return {
+ 
+}
+},
+computed: {},
+methods: {
+ 
+},
+created() {
+   
+},
+ 
+mounted() {
+ new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    speed:1500,
+    observer: true,
+    observeParents: true,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    }
+  })        
+},
+}
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  height: 100vh;
+  height: 90vh;
   background-color: rgba(188, 217, 235, 0.4);
 }
+.swiper-container {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    .swiper-slide {
+      height: 90vh !important
+    }
+    }
 header {
   display: flex;
   justify-content: space-between;
@@ -141,7 +356,6 @@ section {
   width: 100%;
   height: 90vh;
   overflow: hidden;
-
   .blurBox {
     position: absolute;
     top: 0;

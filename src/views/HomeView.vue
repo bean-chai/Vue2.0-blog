@@ -32,7 +32,6 @@
     </div>
   </div>
 </template>
-
 <script  type="text/javascript">
 !(function (e, t, a) {
   function r() {
