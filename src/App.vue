@@ -55,8 +55,9 @@ export default {
           vOffset: -220, // 纵向偏移
         },
         mobile: {
-          show: true, //是否在移动端展示
+          show: false, //是否在移动端展示
           scale: 0.5, //t透明度
+          
         },
       });
   },

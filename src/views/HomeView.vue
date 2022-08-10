@@ -119,7 +119,8 @@ export default {
 </script>
 
 <style lang="scss">
-* {
+@media (min-width:1920px){
+  * {
   margin: 0;
   padding: 0;
   user-select: none;
@@ -249,5 +250,85 @@ a {
       display: block;
     }
   }
+}
+}
+@media (max-width:1920px){
+  * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+ #hello h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-clip: text;
+  text-shadow: 5px 5px 5px rgb(158, 158, 158,0.8)
+}
+a {
+  text-decoration: none;
+}
+.home {
+  position: relative;
+  background: url("@/assets/bgc.jpeg") no-repeat;
+  background-position: 50% 10%;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+ header {
+  display: flex;
+  justify-content: space-between;
+  height: 95px;
+  width: 100%;
+  background-color: #000000;
+  .addressName {
+    font-size: 30px;
+    width: 250px;
+    height: 95px;
+    line-height: 95px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .routerBox {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 30px;
+    .routerLink {
+      font-weight: 600;
+      color: #fff;
+      height: 95px;
+      line-height: 95px;
+    }
+  }
+}
+  .homeBtn {
+   display: none;
+  }
+  .btnPic {
+    display: none;
+  }
+  .shadowBox {
+    display: none;
+  }
+  .copyright {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 8px;
+    text-align: center;
+    span {
+      height: 20px;
+      display: block;
+    }
+  }
+}
 }
 </style>
