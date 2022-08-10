@@ -118,7 +118,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @media (min-width:320px){
   * {
   margin: 0;

@@ -2,7 +2,7 @@
  * @Author: fengyuanyao fengyuanyao@fanyu.com 
  * @Date: 2022-08-03 15:33:01
  * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-05 15:02:41
+ * @LastEditTime: 2022-08-10 17:26:17
  * @FilePath: \blog-demo\src\App.vue
  * @Description: 
  * 
@@ -62,6 +62,19 @@ export default {
       });
   },
 };
+</script>
+<script type="text/javascript">
+//禁用右键（防止右键查看源代码） 
+    window.oncontextmenu=function(){
+      alert('想看我源码？超捏妈！');
+      return false;
+      } 
+    //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
+    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+      alert('想看我源码？超捏妈！');
+        window.event.returnValue = false; 
+        return false; 
+    }
 </script>
 
 <style lang="scss">
