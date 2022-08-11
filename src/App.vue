@@ -2,7 +2,7 @@
  * @Author: fengyuanyao fengyuanyao@fanyu.com 
  * @Date: 2022-08-03 15:33:01
  * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-10 17:26:17
+ * @LastEditTime: 2022-08-11 09:11:46
  * @FilePath: \blog-demo\src\App.vue
  * @Description: 
  * 
@@ -11,9 +11,10 @@
 <template>
   <div id="app">
     <router-view />
+    <audio src="@/assets/bgmusic.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto"></audio>
+
     <!-- <router-view /> -->
     <!-- <div class="star" style="width: 200px; height: 300px; background-color: red;"> -->
-
     <!-- </div> -->
   </div>
 </template>
@@ -61,36 +62,50 @@ export default {
         },
       });
   },
+
 };
 </script>
-<script type="text/javascript">
-//禁用右键（防止右键查看源代码） 
+<!-- <script>
+    function musicAutoPlay(){
+    let music = document.getElementById('aud')//获取audio
+    if (music.paused) {//判断一下paused（pused为真是禁用的）
+        music.play()//调用播放
+    }
+}
+setInterval(musicAutoPlay, 1);//必须使用一个时间函数 ，不触发的情况下还是报错
+
+
+  
+</script> -->
+<!-- <script type="text/javascript">
     window.oncontextmenu=function(){
       alert('想看我源码？超捏妈！');
       return false;
       } 
-    //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
     window.onkeydown = window.onkeyup = window.onkeypress = function () { 
       alert('想看我源码？超捏妈！');
         window.event.returnValue = false; 
         return false; 
     }
-</script>
-
+</script> -->
 <style lang="scss">
 * {
   margin: 0;
   padding: 0;
 }
-body {
-  margin: 0;
-  width: 100%;
-}
-
+audio {
+  display: flex;
+  flex-wrap: wrap;
+    position: absolute;
+    top:50%;
+    right: 0;
+    width: 13vw;
+  }
 html {
   width: 100%;
   height: 100%;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

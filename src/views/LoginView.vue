@@ -22,7 +22,7 @@
             @blur="handleFoucusout2"
           />
         </div>
-        <button class="submitBtn">登录</button>
+        <button class="submitBtn" @click="loginClick">登录</button>
       </div>
       <div class="loginimgBox">
         <div class="title">chaichai.top后台管理系统</div>
@@ -55,17 +55,39 @@ export default {
     handleFoucusout2() {
       this.placeholder2 = "Password";
     },
+    loginClick() {
+      alert('当前处于静态demo测试阶段~登录功能暂未开启~')
+    }
   },
 };
 </script>
-<style scoped lang="scss">
-@media (min-width:320px) {
-  * {
+<style lang="scss">
+* {
   margin: 0;
   padding: 0;
 }
 input {
   resize: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: arial, sans-serif;
+  background-image: linear-gradient(125deg, #258dc9, #0093e9, #80d0c7, #65fdf0);
+  background-size: 400%;
+  animation: bganimation 40s infinite;
+}
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 *:focus {
   outline: none;
@@ -94,157 +116,7 @@ input::input-placeholder {
   color: #ccc !important;
   letter-spacing: 2px !important;
 }
-body {
-  font-family: arial, sans-serif;
-  background-image: linear-gradient(125deg, #258dc9, #0093e9, #80d0c7, #65fdf0);
-  background-size: 400%;
-  animation: bganimation 40s infinite;
-}
-@keyframes bganimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.bgBox {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-.backBtn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 20px;
-  color: #fff;
-}
-.loginBox {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  z-index: 999;
-  width: 70vw;
-  height: 60vh;
-  overflow: hidden;
-  background-color: rgba(110, 110, 110, 0.4);
-  // box-shadow:  20px 20px 45px #bebebe
-  box-shadow: rgba(0, 0, 0, 0.15) 12.4px 12.4px 13.2px;
-}
-.loginName {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 8px;
-  color: #fff;
-  background-clip: text;
-}
-.inputBox {
-  margin: 10px auto;
-}
-.Input {
-  display: inline-block;
-  width: 40vw;
-  height: 5vh;
-  font-size: 12px;
-  text-align: center;
-  border: 0;
-  margin: 20px auto;
-  background-color: transparent;
-  color: #fff;
-  transition: 1s ease-out;
-  position: relative;
-  border-bottom: 3px solid #fff;
-}
-.submitBtn {
-  width: 40vw;
-  height: 5vh;
-  border-radius: 25px;
-  font-size: 20px;
-  color: #fff;
-  border: 3px solid #fff;
-  background: #258dc9;
-  cursor: pointer;
-  margin-top: 30px;
-}
-.loginText {
-  position: relative;
-  flex: 1;
-  width: 30vw;
-  padding: 60px;
-}
-.shadowbox {
-  width: 30vw;
-  height: 60vh;
-  background-color: rgba(110, 110, 110, 0.4);
-}
-.loginimgBox {
-  flex: 0;
-  overflow: hidden;
-}
-}
-@media (min-width:1920px) {
-  * {
-  margin: 0;
-  padding: 0;
-}
-input {
-  resize: none;
-}
-*:focus {
-  outline: none;
-}
-input::input-placeholder {
-  color: #ccc !important;
-  letter-spacing: 2px !important;
-}
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #ccc !important;
-  letter-spacing: 2px !important;
-}
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #ccc !important;
-  letter-spacing: 2px !important;
-}
-::-moz-placeholder {
-  /* Mozilla Firefox 19  */
-  color: #ccc !important;
-  letter-spacing: 2px !important;
-}
-:-ms-input-placeholder {
-  /* Internet Explorer 10  */
-  color: #ccc !important;
-  letter-spacing: 2px !important;
-}
-body {
-  font-family: arial, sans-serif;
-  background-image: linear-gradient(125deg, #258dc9, #0093e9, #80d0c7, #65fdf0);
-  background-size: 400%;
-  animation: bganimation 40s infinite;
-}
-@keyframes bganimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 .bgBox {
   position: absolute;
   display: block;
@@ -271,7 +143,6 @@ body {
   height: 60vh;
   overflow: hidden;
   background-color: rgba(110, 110, 110, 0.4);
-  // box-shadow:  20px 20px 45px #bebebe
   box-shadow: rgba(0, 0, 0, 0.15) 12.4px 12.4px 13.2px;
 }
 .loginName {
@@ -351,6 +222,144 @@ body {
     font-size: 40px;
   }
 }
+
+@media (max-width:1440px) {
+  * {
+  margin: 0;
+  padding: 0;
 }
+input {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
+input::input-placeholder {
+  color: #ccc !important;
+  letter-spacing: 2px !important;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ccc !important;
+  letter-spacing: 2px !important;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc !important;
+  letter-spacing: 2px !important;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19  */
+  color: #ccc !important;
+  letter-spacing: 2px !important;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10  */
+  color: #ccc !important;
+  letter-spacing: 2px !important;
+}
+body {
+  font-family: arial, sans-serif;
+  background-image: linear-gradient(125deg, #258dc9, #0093e9, #80d0c7, #65fdf0);
+  background-size: 400%;
+  animation: bganimation 40s infinite;
+}
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bgBox {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.backBtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.loginBox {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  z-index: 999;
+  width: 70vw;
+  height: 60vh;
+  overflow: hidden;
+  background-color: rgba(110, 110, 110, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.15) 12.4px 12.4px 13.2px;
+}
+.loginName {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: #fff;
+  background-clip: text;
+}
+.inputBox {
+  margin: 10px auto;
+}
+.Input {
+  display: inline-block;
+  width: 40vw;
+  height: 5vh;
+  font-size: 12px;
+  text-align: center;
+  border: 0;
+  margin: 20px auto;
+  background-color: transparent;
+  color: #fff;
+  transition: 1s ease-out;
+  position: relative;
+  border-bottom: 3px solid #fff;
+}
+.submitBtn {
+  width: 40vw;
+  height: 5vh;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #fff;
+  border: 3px solid #fff;
+  background: #258dc9;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.loginText {
+  position: relative;
+  flex: 1;
+  width: 30vw;
+  padding: 60px;
+}
+.shadowbox {
+  width: 30vw;
+  height: 60vh;
+  background-color: rgba(110, 110, 110, 0.4);
+}
+.loginimgBox {
+  flex: 0;
+  overflow: hidden;
+}
+}
+
+
 
 </style>
