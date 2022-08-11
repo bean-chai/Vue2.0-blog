@@ -513,7 +513,7 @@ section {
     background: url("../assets/bg3.jpg") repeat;
      animation: bganimation 30s infinite;
     background-size: 500px ;
-  }
+}
         @keyframes bganimation {
             0% {
                 background-position: 0% 50%;

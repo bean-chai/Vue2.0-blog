@@ -2,7 +2,7 @@
  * @Author: fengyuanyao fengyuanyao@fanyu.com 
  * @Date: 2022-08-03 15:33:01
  * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-10 10:23:50
+ * @LastEditTime: 2022-08-11 15:28:04
  * @FilePath: \blog-demo\src\router\index.js
  * @Description: 
  * 
@@ -33,7 +33,8 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue'),
+    // component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '../views/BackstageView.vue'),
     children: [{
       path: '/backstage',
       name: 'backstage',
