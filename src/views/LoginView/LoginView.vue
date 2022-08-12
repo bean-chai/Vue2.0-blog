@@ -65,7 +65,7 @@ export default {
 * {
   margin: 0;
   padding: 0;
-}
+}  
 input {
   resize: none;
 }
@@ -177,8 +177,18 @@ input::input-placeholder {
   font-size: 20px;
   color: #fff;
   border: 3px solid #fff;
-  background: #258dc9;
+  background-image: linear-gradient(to right, #258DC9 0%, #00ABD5  51%, #34DEAB  100%);
   cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+}
+.submitBtn:hover {
+  background-position: center center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 .loginText {
   position: relative;

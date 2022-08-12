@@ -13,7 +13,7 @@
         <h1>welecome to chaichai.top</h1>
     </div>
     <div class="homeBtn">
-      <img src="../assets/homeBtn.webp" class="btnPic" />
+      <img src="@/assets/homeBtn.webp" class="btnPic" />
       <div class="shadowBox">
         <div>
           <span class="shadowText">柴柴万岁</span>
@@ -142,7 +142,7 @@ export default {
 html {
   width: 100%;
   height: 100%;
-  cursor: url("../assets/22.cur"), default;
+  cursor: url("@/assets/22.cur"), default;
 }
 a {
   text-decoration: none;

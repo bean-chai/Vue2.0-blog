@@ -2,7 +2,7 @@
  * @Author: fengyuanyao fengyuanyao@fanyu.com 
  * @Date: 2022-08-03 15:33:01
  * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-11 15:28:04
+ * @LastEditTime: 2022-08-12 14:51:45
  * @FilePath: \blog-demo\src\router\index.js
  * @Description: 
  * 
@@ -10,7 +10,7 @@
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/HomeView/HomeView.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -25,7 +25,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ArticleView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/ArticleView/ArticleView.vue')
   },
   {
     path: '/login',
@@ -33,12 +33,12 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    // component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue'),
-    component: () => import(/* webpackChunkName: "about" */ '../views/BackstageView.vue'),
+    // component: () => import(/* webpackChunkName: "about" */ '../views/LoginView/LoginView.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '../views/BackstageView/BackstageView.vue'),
     children: [{
       path: '/backstage',
       name: 'backstage',
-      component: () => import('../views/BackstageView.vue'),
+      component: () => import('../views/BackstageView/BackstageView.vue'),
     }]
   }
 ]

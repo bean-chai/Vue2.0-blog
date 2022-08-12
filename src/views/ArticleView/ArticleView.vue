@@ -18,7 +18,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121276751?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm1.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm1.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -31,7 +31,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121294881?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm2.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm2.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -44,7 +44,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121462698?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm3.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm3.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -57,7 +57,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121533214?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm4.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm4.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -70,7 +70,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121570823?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm5.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm5.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -83,7 +83,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121592246?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm6.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm6.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -101,7 +101,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121600151?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm1.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm1.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -114,7 +114,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121622479?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm2.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm2.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -127,7 +127,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121705618?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm3.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm3.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -140,7 +140,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/121808293?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm4.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm4.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -153,7 +153,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/122498672?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm5.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm5.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -166,7 +166,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/122521393?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm6.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm6.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -187,7 +187,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/122589948?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm1.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm1.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -200,7 +200,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/122825737?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm2.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm2.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -213,7 +213,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/124134746?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm3.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm3.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -226,7 +226,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/124246672?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm4.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm4.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -239,7 +239,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/125213895?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm5.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm5.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -252,7 +252,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/126133266?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm6.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm6.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -273,7 +273,7 @@
             href="https://blog.csdn.net/bbxx_lzx/article/details/126284897?spm=1001.2014.3001.5501"
             class="articleContent"
             :style="{
-              background: 'url(' + require('../assets/mm1.jpeg') + ') ',
+              background: 'url(' + require('@/assets/mm1.jpeg') + ') ',
               'background-size': 'cover',
               'background-position': 'center center',
               color: '#fff',
@@ -387,7 +387,7 @@ section {
     right:0;
     width: 100%;
     height: 100vh;
-    background: url("../assets/bg3.jpg") repeat;
+    background: url("@/assets/bg3.jpg") repeat;
      animation: bganimation 100s infinite;
     background-size: 500px ;
   }
@@ -510,7 +510,7 @@ section {
     right:0;
     width: 100%;
     height: 100vh;
-    background: url("../assets/bg3.jpg") repeat;
+    background: url("@/assets/bg3.jpg") repeat;
      animation: bganimation 30s infinite;
     background-size: 500px ;
 }
