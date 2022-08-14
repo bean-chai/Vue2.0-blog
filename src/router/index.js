@@ -13,6 +13,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView/HomeView.vue'
 Vue.use(VueRouter)
 
+
 const routes = [
   {
     path: '/',

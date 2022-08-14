@@ -8,10 +8,22 @@
  * 
  * Copyright (c) 2022 by error: git config user.name && git config user.email & please set dead value or install git, All Rights Reserved. 
  */
-import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import Vue from 'vue';
+import ElementUI from 'element-ui';
+import { ElementTiptapPlugin } from 'element-tiptap';
+// 引入 ElementUI 样式
+import 'element-ui/lib/theme-chalk/index.css';
+// 引入 import element-tiptap 样式
+import 'element-tiptap/lib/index.css';
+import router from '@/router/index.js'
 
+// 安装 ElementUI 插件
+Vue.use(ElementUI);
+// 安装 element-tiptap 插件
+Vue.use(ElementTiptapPlugin, {
+  lang: 'zh', // 设置语言为中文
+});
 Vue.config.productionTip = false
 
 

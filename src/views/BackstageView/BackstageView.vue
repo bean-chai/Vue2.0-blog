@@ -12,37 +12,38 @@
   <div class="backBox">
     <NavigationBar></NavigationBar>
     <BackstageTitle></BackstageTitle>
-    <TodayFlow></TodayFlow>
-    <PostArticle v-show="false"></PostArticle>
+    <TodayFlow v-show="false"></TodayFlow>
+    <PostArticle></PostArticle>
   </div>
 </template>
 
 <script>
-import NavigationBar from './navigationBar/index.vue'
-import BackstageTitle from './backstageTitle/index.vue'
-import TodayFlow from './navigationContent/todayFlow.vue'
-import PostArticle from './navigationContent/postArticle.vue'
+import NavigationBar from "./navigationBar/index.vue";
+import BackstageTitle from "./backstageTitle/index.vue";
+import TodayFlow from "./navigationContent/todayFlow.vue";
+import PostArticle from "./navigationContent/postArticle.vue";
 export default {
-  components:{
+  component: {},
+  components: {
     NavigationBar,
     BackstageTitle,
     TodayFlow,
-    PostArticle
-  }
-}
+    PostArticle,
+  },
+};
 </script>
 
 <style lang="scss">
 body {
   background: #000;
-
+  user-select: none;
 }
 .backBox {
+  z-index: 0;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   border-radius: 3em 3em;
 }
-
 </style>

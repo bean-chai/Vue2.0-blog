@@ -11,7 +11,13 @@
 <template>
   <div id="app">
     <router-view />
-    <audio src="@/assets/bgmusic.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto"></audio>
+    <audio
+      src="@/assets/bgmusic.mp3"
+      id="aud"
+      autoplay="autoplay"
+      controls="controls"
+      preload="auto"
+    ></audio>
 
     <!-- <router-view /> -->
     <!-- <div class="star" style="width: 200px; height: 300px; background-color: red;"> -->
@@ -19,8 +25,10 @@
   </div>
 </template>
 <script>
+Vue.component("todayFlow", {});
 export default {
   name: "App",
+
   created() {
     window.L2Dwidget
       //此处是对点击人物时触发事件的监听
@@ -58,11 +66,9 @@ export default {
         mobile: {
           show: false, //是否在移动端展示
           scale: 0.5, //t透明度
-          
         },
       });
   },
-
 };
 </script>
 <!-- <script>
@@ -96,11 +102,11 @@ setInterval(musicAutoPlay, 1);//必须使用一个时间函数 ，不触发的�
 audio {
   display: flex;
   flex-wrap: wrap;
-    position: absolute;
-    top:50%;
-    right: 0;
-    width: 13vw;
-  }
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 13vw;
+}
 html {
   width: 100%;
   height: 100%;
@@ -131,9 +137,12 @@ nav {
 <style>
 @font-face {
   font-family: "iconfont"; /* Project id 3583917 */
-  src: url('//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.woff2?t=1660267502622') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.woff?t=1660267502622') format('woff'),
-       url('//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.ttf?t=1660267502622') format('truetype');
+  src: url("//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.woff2?t=1660267502622")
+      format("woff2"),
+    url("//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.woff?t=1660267502622")
+      format("woff"),
+    url("//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.ttf?t=1660267502622")
+      format("truetype");
 }
 
 .iconfont {
