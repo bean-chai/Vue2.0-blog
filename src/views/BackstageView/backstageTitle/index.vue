@@ -52,6 +52,7 @@ export default {
       document.body.requestFullscreen();
     },
     handleExit() {
+      localStorage.removeItem("token");
       this.$router.push("/");
     },
   },

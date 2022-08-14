@@ -25,7 +25,7 @@
   </div>
 </template>
 <script>
-Vue.component("todayFlow", {});
+// Vue.component("todayFlow", {});
 export default {
   name: "App",
 
