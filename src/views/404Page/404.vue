@@ -1,0 +1,89 @@
+<template>
+  <div class="bgBox">
+    <div class="hello">
+        404
+    </div>
+    <div id="contant"></div>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="scss">
+
+.hello {
+    height: 50vh;
+ font-size: 15rem;
+ text-transform: uppercase;
+ font-weight: 900;
+ letter-spacing: 10px;
+ background: url("@/assets/loginbg1.png") 50% 50%;
+ background-size: cover;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ background-clip: text;
+//   text-shadow: 15px 2px rgb(158, 158, 158,0.6)
+ }
+#contant {
+position: relative;
+align-items: center;
+height: 50vh;
+background-color: rgb(118, 218, 255);
+overflow: hidden;
+}
+
+#contant:before,
+#contant:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    min-width: 300vw;
+    min-height: 300vw;
+    background-color: #fff;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#contant:before {
+    bottom: 35vh;
+    border-radius: 45%;
+    animation-duration: 10s;
+}
+
+#contant:after {
+    bottom: 27vh;
+    opacity: .5;
+    border-radius: 47%;
+    animation-duration: 10s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, 0) rotateZ(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -2%) rotateZ(180deg);
+    }
+
+    100% {
+        transform: translate(-50%, 0%) rotateZ(360deg);
+    }
+}
+
+h2 {
+    position: relative;
+    color: #333;
+    z-index: 10;
+    text-align: center;
+    height: 100vh;
+    line-height: 140vh;
+    font-size: 8vw;
+    text-shadow: 3px 3px 2px #999;
+}
+</style>

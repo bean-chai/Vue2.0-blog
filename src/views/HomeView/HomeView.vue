@@ -24,13 +24,11 @@
       <span style="color: #fff; font-size: 19px">© 2022 Chai chai</span>
       <span
         ><a
-          href="https://beian.miit.gov.cn/#/Integrated/index"
           style="color: #fff; font-size: 19px"
           >滇ICP备2022000365号</a
         ></span
       >
     </div>
-
   </div>
 </template>
 <script  type="text/javascript">
@@ -121,6 +119,7 @@ export default {
 
 <style scoped lang="scss">
   * {
+          // href="https://beian.miit.gov.cn/#/Integrated/index"备案
   margin: 0;
   padding: 0;
   user-select: none;
