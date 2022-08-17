@@ -1,13 +1,7 @@
 <template>
   <div id="app">
     <router-view />
-    <audio
-      src="@/assets/bgmusic.mp3"
-      id="aud"
-      autoplay="autoplay"
-      controls="controls"
-      preload="auto"
-    ></audio>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=7475236824&auto=1&height=90"></iframe>
   </div>
 </template>
 <script>
@@ -46,7 +40,7 @@ export default {
           position: "left",
           width: 250,
           height: 700,
-          hOffset: 50, // 横向偏移
+          hOffset: 1600, // 横向偏移
           vOffset: -220, // 纵向偏移
         },
         mobile: {
@@ -62,13 +56,11 @@ export default {
   margin: 0;
   padding: 0;
 }
-audio {
-  display: flex;
-  flex-wrap: wrap;
+iframe {
+  border-radius: 3rem;
   position: absolute;
-  top: 50%;
-  right: 0;
-  width: 13vw;
+  bottom: 0;
+  left: 0;
 }
 html {
   width: 100%;

@@ -2,7 +2,7 @@
  * @Author: fengyuanyao fengyuanyao@fanyu.com 
  * @Date: 2022-08-11 15:19:05
  * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-12 17:17:14
+ * @LastEditTime: 2022-08-17 14:04:06
  * @FilePath: \blog-demo\src\views\BackstageView\navigationBar\index.vue
  * @Description: 
  * 
@@ -57,7 +57,7 @@ a {
   left: 0;
   width: 10vw;
   height: 100vh;
-  background: url("@/assets/bgc2.jpg") repeat;
+  background: url("https://s1.ax1x.com/2022/08/17/vBdCcD.jpg") repeat;
   background-size: 800px;
   .shadowBox {
     width: 100%;

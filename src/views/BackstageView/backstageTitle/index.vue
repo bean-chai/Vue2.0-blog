@@ -2,7 +2,7 @@
  * @Author: fengyuanyao fengyuanyao@fanyu.com 
  * @Date: 2022-08-11 15:41:11
  * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-12 17:06:54
+ * @LastEditTime: 2022-08-17 14:05:39
  * @FilePath: \blog-demo\src\views\BackstageView\backstageTitle\index.vue
  * @Description: 
  * 
@@ -72,7 +72,7 @@ export default {
   width: 90vw;
   height: 10vh;
   z-index: -1;
-  background: url("@/assets/bgc2.jpg") repeat;
+  background: url("https://s1.ax1x.com/2022/08/17/vBdCcD.jpg") repeat;
   background-size: 800px;
 
   overflow: hidden;
@@ -115,9 +115,9 @@ export default {
     width: 7vh;
     height: 7vh;
     border-radius: 50%;
-    background: url("@/assets/avatar1.webp") no-repeat;
+    background: url("https://s1.ax1x.com/2022/08/17/vBaHcF.jpg") no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 200%;
     border: 1px solid #000;
     .statusLight {
       cursor: pointer;

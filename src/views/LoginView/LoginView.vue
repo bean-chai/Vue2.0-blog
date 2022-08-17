@@ -27,7 +27,7 @@
         <button class="submitBtn" @click="loginClick">登录</button>
       </div>
       <div class="loginimgBox">
-        <div class="title">chaichai.top后台管理系统</div>
+        <div class="title">chaichai-后台</div>
         <div class="shadowbox"></div>
       </div>
     </div>
@@ -215,7 +215,7 @@ input::input-placeholder {
 .shadowbox {
   width: 30vw;
   height: 60vh;
-  background-color: rgba(110, 110, 110, 0.4);
+  background-color: rgba(110, 110, 110, 0.1);
 }
 .loginimgBox {
   flex: 1;
@@ -235,14 +235,11 @@ input::input-placeholder {
   font-weight: 600;
   height: 60vh;
   line-height: 60vh;
-  animation: titlemation 2s linear 1;
+  animation: titlemation 3s linear 1;
 }
 @keyframes titlemation {
   0% {
     font-size: 20px;
-  }
-  50% {
-    font-size: 30px;
   }
   100% {
     font-size: 40px;

@@ -143,7 +143,7 @@ export default {
   width: 90vw;
   height: 90vh;
   overflow: hidden;
-  background: url("@/assets/backBG1.jpg") no-repeat;
+  background: url("https://s1.ax1x.com/2022/08/17/vBa71U.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   .postLeft {

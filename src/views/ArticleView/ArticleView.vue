@@ -336,13 +336,13 @@ a{
     text-decoration: none;
 }
 body {
+  overflow: hidden;
   height: 90vh;
   background-color: rgba(188, 217, 235, 0.4);
 }
 .swiper-container {
     width: 100%;
     height: 90vh;
-    overflow: hidden;
     .swiper-slide {
       height: 90vh !important
     }
@@ -387,7 +387,7 @@ section {
     right:0;
     width: 100%;
     height: 100vh;
-    background: url("@/assets/bg3.jpg") repeat;
+    background: url("https://s1.ax1x.com/2022/08/17/vBdPje.jpg") repeat;
      animation: bganimation 100s infinite;
     background-size: 500px ;
   }
@@ -510,7 +510,7 @@ section {
     right:0;
     width: 100%;
     height: 100vh;
-    background: url("@/assets/bg3.jpg") repeat;
+    background: url("https://s1.ax1x.com/2022/08/17/vBdPje.jpg") repeat;
      animation: bganimation 30s infinite;
     background-size: 500px ;
 }

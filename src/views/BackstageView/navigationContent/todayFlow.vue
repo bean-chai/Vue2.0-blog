@@ -2,7 +2,7 @@
  * @Author: fengyuanyao fengyuanyao@fanyu.com 
  * @Date: 2022-08-11 16:27:54
  * @LastEditors: fengyuanyao fengyuanyao@fanyu.com
- * @LastEditTime: 2022-08-12 15:51:34
+ * @LastEditTime: 2022-08-17 14:13:27
  * @FilePath: \blog-demo\src\views\BackstageView\navigationContent\todayFlow.vue
  * @Description: 
  * 
@@ -49,7 +49,7 @@ export default {};
   width: 90vw;
   height: 90vh;
   overflow: hidden;
-  background: url("@/assets/backBG1.jpg") no-repeat;
+  background: url("https://s1.ax1x.com/2022/08/17/vBa71U.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   .shadowBox {

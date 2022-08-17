@@ -148,7 +148,7 @@ a {
 }
 .home {
   position: relative;
-  background: url("@/assets/bgc.jpeg") no-repeat;
+  background: url("https://s1.ax1x.com/2022/08/17/vBaIhV.jpg") no-repeat;
   background-size: 100% 122vh;
   width: 100%;
   height: 100vh;
@@ -276,7 +276,7 @@ a {
 }
 .home {
   position: relative;
-  background: url("@/assets/bgc.jpeg") no-repeat;
+  background: url("https://s1.ax1x.com/2022/08/17/vBaIhV.jpg") no-repeat;
   background-position: 50% 10%;
   background-size: cover;
   width: 100%;
