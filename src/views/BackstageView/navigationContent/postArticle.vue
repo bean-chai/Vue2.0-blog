@@ -143,7 +143,8 @@ export default {
   width: 90vw;
   height: 90vh;
   overflow: hidden;
-  background: url("https://s1.ax1x.com/2022/08/17/vBa71U.jpg") no-repeat;
+  background: url("https://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blogimg/41e7433cd66df97a3305de01d4ba1e25.jpeg")
+    no-repeat;
   background-position: center center;
   background-size: cover;
   .postLeft {

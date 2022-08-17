@@ -57,7 +57,8 @@ a {
   left: 0;
   width: 10vw;
   height: 100vh;
-  background: url("https://s1.ax1x.com/2022/08/17/vBdCcD.jpg") repeat;
+  background: url("https://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blogimg/bg2.jpg")
+    repeat;
   background-size: 800px;
   .shadowBox {
     width: 100%;

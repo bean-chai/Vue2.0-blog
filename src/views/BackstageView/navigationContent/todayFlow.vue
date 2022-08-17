@@ -49,7 +49,8 @@ export default {};
   width: 90vw;
   height: 90vh;
   overflow: hidden;
-  background: url("https://s1.ax1x.com/2022/08/17/vBa71U.jpg") no-repeat;
+  background: url("https://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blogimg/f4e2cc15efe262e3b2cd2e4b2b6cfc96.jpeg")
+    no-repeat;
   background-position: center center;
   background-size: cover;
   .shadowBox {

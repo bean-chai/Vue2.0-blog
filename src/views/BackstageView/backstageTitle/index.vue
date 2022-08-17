@@ -72,7 +72,8 @@ export default {
   width: 90vw;
   height: 10vh;
   z-index: -1;
-  background: url("https://s1.ax1x.com/2022/08/17/vBdCcD.jpg") repeat;
+  background: url("https://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blogimg/bg2.jpg")
+    repeat;
   background-size: 800px;
 
   overflow: hidden;
@@ -115,9 +116,10 @@ export default {
     width: 7vh;
     height: 7vh;
     border-radius: 50%;
-    background: url("https://s1.ax1x.com/2022/08/17/vBaHcF.jpg") no-repeat;
+    background: url("https://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blogimg/6e3d332585531c3f156a200f3d64cb2d.jpeg")
+      no-repeat;
     background-position: center center;
-    background-size: 200%;
+    background-size: cover;
     border: 1px solid #000;
     .statusLight {
       cursor: pointer;

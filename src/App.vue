@@ -1,7 +1,15 @@
 <template>
   <div id="app">
     <router-view />
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=7475236824&auto=1&height=90"></iframe>
+    <iframe
+      frameborder="no"
+      border="0"
+      marginwidth="0"
+      marginheight="0"
+      width="330"
+      height="110"
+      src="//music.163.com/outchain/player?type=0&id=7475236824&auto=1&height=90"
+    ></iframe>
   </div>
 </template>
 <script>
@@ -92,11 +100,11 @@ nav {
 <style>
 @font-face {
   font-family: "iconfont"; /* Project id 3583917 */
-  src: url("//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.woff2?t=1660267502622")
+  src: url("//at.alicdn.com/t/c/font_3583917_39t24lfuudb.woff2?t=1660748527355")
       format("woff2"),
-    url("//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.woff?t=1660267502622")
+    url("//at.alicdn.com/t/c/font_3583917_39t24lfuudb.woff?t=1660748527355")
       format("woff"),
-    url("//at.alicdn.com/t/c/font_3583917_mcgnr7uedpf.ttf?t=1660267502622")
+    url("//at.alicdn.com/t/c/font_3583917_39t24lfuudb.ttf?t=1660748527355")
       format("truetype");
 }
 
@@ -106,6 +114,50 @@ nav {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-kafei:before {
+  content: "\e657";
+}
+
+.icon-shutiao:before {
+  content: "\e658";
+}
+
+.icon-nailao:before {
+  content: "\e65b";
+}
+
+.icon-kele:before {
+  content: "\e65c";
+}
+
+.icon-paomian:before {
+  content: "\e689";
+}
+
+.icon-tiantianquan:before {
+  content: "\e68d";
+}
+
+.icon-shupian:before {
+  content: "\e68e";
+}
+
+.icon-pisa:before {
+  content: "\e69a";
+}
+
+.icon-haixing:before {
+  content: "\e69b";
+}
+
+.icon-haizhe:before {
+  content: "\e69c";
+}
+
+.icon-kuangquanshui:before {
+  content: "\e69f";
 }
 
 .icon-qiehuan:before {
@@ -340,4 +392,4 @@ nav {
   content: "\e6d4";
 }
 </style>
-</style>
+

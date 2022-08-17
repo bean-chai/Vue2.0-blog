@@ -222,8 +222,9 @@ input::input-placeholder {
   width: 30vw;
   height: 60vh;
   overflow: hidden;
-  background: url("@/assets/mm4.jpeg") no-repeat center center;
-  background-size: 150% 100%;
+  background: url("https://chaichaiimage.oss-cn-hangzhou.aliyuncs.com/blogimg/517dfb9446bd453a3e93eb2dfe0437dc.jpeg")
+    no-repeat center center;
+  background-size: 100% 100%;
   flex: 0 0 auto;
 }
 .title {
